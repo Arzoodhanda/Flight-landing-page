@@ -1,0 +1,532 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+.hero {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: black;
+    height: 620px;
+    background-image: url(img/123.webp);
+    background-position: center;
+    background-size: cover;
+    opacity: 1;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+}
+
+.content h2 {
+    color: white;
+    font-size: 32px;
+    text-align: center;
+    word-spacing: 3px;
+    letter-spacing: 5px;
+    font-weight: 600;
+}
+
+.content h1 {
+    color: white;
+    font-size: 45px;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 20px;
+}
+
+.content button {
+    text-align: center;
+    background-color: rgb(232, 2, 2);
+    font-size: 17px;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 20px;
+    padding: 13px 40px;
+    margin-top: 20px;
+}
+
+.second-banner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: black;
+    height: 200px;
+    background-image: url(img/rs=w_1535\,m.webp);
+    background-position: center;
+    background-size: cover;
+    opacity: 1;
+    width: 100%;
+    padding: 20px; /* Add some padding for better spacing */
+}
+
+.second-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2); /* Adjust the opacity and color for the overlay */
+    z-index: 1; /* Ensure the overlay is above the background image */
+}
+
+.content2 {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.prime {
+    font-size: 42px;
+    color: white;
+    font-weight: 800;
+    text-align: left;
+}
+
+.call button {
+    text-align: center;
+    background-color: rgb(232, 2, 2);
+    font-size: 17px;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 20px;
+    padding: 13px 40px;
+}
+
+@media (max-width: 767px) {
+    .content2 {
+        flex-direction: column; /* Stack the text and button vertically */
+        align-items: center;
+        text-align: center; /* Center-align the text and button */
+    }
+
+    .prime {
+        font-size: 20px; /* Reduce the font size on smaller screens */
+        margin-bottom: 15px;
+        text-align: center; /* Center text on mobile */
+    }
+
+    .call button {
+        width: 100%; /* Make the button full width on mobile */
+    }
+}
+
+.about-us {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-us .about {
+    font-size: 44px;
+    color: rgb(232, 2, 2);
+    font-weight: 800;
+}
+
+.about-us .divider {
+    width: 20%;
+    height: 3px;
+    background-color: rgb(232, 2, 2);
+    margin-top: 30px;
+}
+
+.section-new {
+    margin-top: 70px;
+    display: flex;
+}
+
+.our-story {
+    background-image: url("img/rs=w_1279,m.webp");
+    background-position: center;
+    background-size: cover;
+    padding: 70px 30px;
+}
+
+.content3 h1 {
+    font-size: 32px;
+    color: white;
+    text-shadow: 0px 2px 30px rgb(0 0 0);
+    margin-bottom: 20px;
+}
+
+.content3 h3 {
+    font-size: 22px;
+    color: white;
+    line-height: 30px;
+    text-shadow: 0px 2px 30px rgb(0 0 0);
+    margin-bottom: 30px;
+}
+
+.content3 button {
+    text-align: center;
+    background-color: rgb(232, 2, 2);
+    font-size: 17px;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 20px;
+    padding: 13px 40px;
+}
+
+.history-us {
+    padding: 40px 0;
+}
+
+.history {
+    color: white;
+    font-size: 62px;
+    font-weight: 800;
+}
+
+.tickets {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    gap: 30px;
+}
+
+.content4 h1 {
+    color: white;
+    font-size: 30px;
+}
+
+.content4 h3 {
+    color: white;
+    font-size: 20px;
+}
+
+.content4 button {
+    text-align: center;
+    background-color: rgb(232, 2, 2);
+    font-size: 17px;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 20px;
+    padding: 13px 40px;
+}
+
+.tickets1 {
+    display: inline;
+    align-items: center;
+}
+
+.tickets1 p {
+    color: rgb(232, 2, 2);
+}
+
+.section-footer {
+    padding: 56px 0;
+    background-color: black;
+}
+
+.content-footer p {
+    color: aliceblue;
+}
+
+.yeh {
+    padding: 5px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+}
+
+/* Mobile View Adjustments */
+@media (max-width: 767px) {
+    .hero {
+        height: auto;
+        padding: 40px 0;
+    }
+
+    .content h1 {
+        font-size: 28px;
+        margin-top: 50px;
+    }
+
+    .content h2 {
+        font-size: 24px;
+    }
+
+    
+
+    .about-us .about {
+        font-size: 30px;
+    }
+
+    .section-new {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .our-story {
+        padding: 50px 20px;
+    }
+
+    .content3 h1 {
+        font-size: 24px;
+    }
+
+    .tickets {
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+
+    .history {
+        font-size: 42px;
+    }
+    .content4{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .content4 h1 {
+        font-size: 24px;
+    }
+
+    .content-footer p {
+        font-size: 14px;
+    }
+
+    .section-footer {
+        padding: 20px 10px;
+    }
+}
+
+
+.terms {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: black;
+    height: 200px;
+    background-image: url(img/123.webp);
+    background-position: center;
+    background-size: cover;
+    opacity: 1;
+}
+
+.terms::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.conditions h1 {
+    position: relative;
+    z-index: 2;
+    color: white;
+    font-size: 45px;
+    font-weight: 800;
+    text-align: center;
+}
+
+
+
+
+    /* General styling for the popup background */
+    #popupOverlay {
+      position: fixed;
+      display: none;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: rgba(0,0,0,0.5);
+      z-index: 9999;
+    }
+
+    /* Popup box styling */
+    #popupBox {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: white;
+      width: 100%;
+      max-width: 600px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Header with close button */
+    #popupHeader {
+      background-color: #003366;
+      color: white;
+      padding: 15px;
+      font-size: 18px;
+      position: relative;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+
+    #closeIcon {
+      position: absolute;
+      top: 12px;
+      right: 15px;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    /* Circular image at the top */
+    .popupImage {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin-top: -40px;
+      border: 5px solid white;
+    }
+
+    /* Main content of the popup */
+    #popupContent{
+        padding: 20px;
+    }
+    #popupContent h1 {
+      font-size: 20px;
+      margin: 20px 0;
+      color: #003366;
+      padding: 0 10px;
+      font-size: 35px;
+      font-weight: bold;
+    }
+    #popupContent img{
+    height: 100%;
+    width: 100%;
+    max-width: 100px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: none;
+    margin-top: 12px;
+    }
+
+    #exclusiveOffer {
+      font-size: 20px;
+      color: #333;
+      margin: 10px 0;
+      font-weight: bold;
+    }
+
+    /* Phone button style */
+    .phoneButton {
+      background-color: #003366;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      font-size: 25px;
+      margin: 10px 0;
+      display: inline-block;
+      width: 50%;
+      font-weight: bold;
+      text-decoration: none;
+      cursor: pointer;
+      text-transform: uppercase;
+    }
+
+    .phoneButton:hover {
+      background-color: #004099;
+    }
+
+    /* Footer style with another button */
+    #popupFooter {
+      background-color: #003366;
+      padding: 15px;
+      font-size: 20px;
+      color: white;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      text-transform: uppercase;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 600px) {
+      #popupBox {
+        width: 95%;
+      }
+
+      #popupHeader {
+        font-size: 16px;
+      }
+
+      #popupContent h1 {
+        font-size: 18px;
+      }
+
+      .phoneButton {
+        font-size: 14px;
+        padding: 10px;
+      }
+
+      #popupFooter {
+        font-size: 14px;
+      }
+    }
+
+
+
+.footer-bottom{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: auto;
+    background-color: rgb(232, 2, 2);
+    padding: 10px;
+    text-align: center;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-bottom svg{
+    color: white;
+    width: 25px;
+    height: 25px;
+}
